@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="movie-container">
+        <h1 id="movieTitle"></h1>
+        <iframe id="movieVideo" width="640" height="360"></iframe>
+        <p id="movieSynopsis"></p>
+    </div>
+
+    <script>
+        let movie = JSON.parse(localStorage.getItem("selectedMovie"));
+        if (movie) {
+            document.getElementById("movieTitle").textContent = movie.title;
+            document.getElementById("movieVideo").src = movie.video;
+            document.getElementById("movieSynopsis").textContent = movie.synopsis;
+        }
+    </script>
+</body>
+</html>

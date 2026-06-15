@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Recommendations</h1>
+        <input type="text" id="searchBar" placeholder="Search for a movie...">
+        <select id="languageFilter">
+            <option value="all">All Languages</option>
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+            <option value="telugu">Telugu</option>
+            
+        </select>
+        <select id="genreFilter">
+            <option value="all">All Genres</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="romantic">romantic</option>
+            <option value="crime">crime</option>
+            <option value="drama">drama</option>
+            <option value="history">history</option>
+            
+        </select>
+    </header>
+    
+    <div class="movie-grid" id="movieList">
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
